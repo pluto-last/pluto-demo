@@ -1,0 +1,21 @@
+type Request {
+	Name string `path:"name,options=you|me"`
+}
+
+type Response {
+	Message string `json:"message"`
+}
+
+
+@server(
+	group: foo
+	prefix: pluto
+)
+
+service pluto-api {
+	@handler foo
+	get /from/:name (Request) returns (Response)
+	
+	@handler login
+	post /from/login (Request) returns (Response)
+}
