@@ -1,0 +1,21 @@
+port: 9253
+db:
+  type: postgres
+  dsn: "host=127.0.0.1 user=pluto dbname=pluto sslmode=disable password=880206congwu"
+  debug: false
+cache:
+  addr: '127.0.0.1:6379'
+  password: ''
+jwt:
+  devAuth: true
+  timeout: 300
+  signKey: 7fZjujwnf4K9eG52ncyzF9UE1dBsWGBFi2Z1
+sms:
+  apiKey: 271d01ed167e4c416cf2e1e0caaed8dc
+  template:
+zap:
+  level: 'info'
+  format: 'console' #console or json
+  prefix:
+  director: 'log'
+  log-in-console: false
