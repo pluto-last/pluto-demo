@@ -1,0 +1,13 @@
+db:
+  type: postgres
+  dsn: "host=127.0.0.1 user=pluto dbname=pluto sslmode=disable password=880206congwu"
+  debug: true
+cache:
+  addr: '127.0.0.1:6379'
+  password: ''
+zap:
+  level: 'info'
+  format: 'console' #console or json
+  prefix:
+  director: 'log'
+  log-in-console: true
